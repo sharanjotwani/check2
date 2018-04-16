@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>Lab10</title>
+</head>
+<main class = "mainclass">
+    <h1>Login Page</h1>
+  
+    <form method="post" id="login-form" action="/login">
+        <label class = "enter" for= "username">Username:</label>
+        <input id="username" class="inputbox" type="text" name="username" placeholder="Enter input here"><br>
+        <label class = "enter" for = "password">Password:</label>
+        <input id = "password" type="password" class= "inputbox" placeholder="Enter Password" name="password"><br>
+        <button id="subButton" class="subButton" type="submit">Submit</button>
+    </form>
+
+    <div class="form-group hidden" id="error-container">
+        <div class="alert alert-danger text-goes-here"></div>
+        
+    </div>
+
+    <div class="form-group hidden" id="result-container">
+        <div class="alert alert-success text-goes-here"></div>
+    </div>
+
+    <p class="error">{{{err}}}</p>
+
+</main>
+</html>
